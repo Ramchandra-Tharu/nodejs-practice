@@ -35,7 +35,13 @@ app.post('/api/users', (req, res) => {
 app.put('/api/users/:id', (req, res) => {
     return res.send({ message : "put request ot the user "})
 });
-
+ 
+app.patch('/api/users/:id', (req, res) => {
+    return res.send({ message : "patch request ot the user "})
+});
+app.delete('/api/users/:id', (req, res) => {
+    return res.send({ message : "delete request ot the user "})
+}); 
 
 
 app.listen(PORT, () => {
